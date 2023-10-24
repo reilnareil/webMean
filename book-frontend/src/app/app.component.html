@@ -1,0 +1,24 @@
+<div>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a class="navbar-brand">
+      <img
+        routerLink="/"
+        style="width: 50px; height: 50px; float: right"
+        src="https://cdn-icons-png.flaticon.com/512/5432/5432699.png"
+      />
+    </a>
+
+    <div class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a routerLink="books" class="nav-link">Books</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="add" class="nav-link">Add</a>
+      </li>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <router-outlet></router-outlet>
+  </div>
+</div>

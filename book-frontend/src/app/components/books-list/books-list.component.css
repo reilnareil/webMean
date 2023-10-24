@@ -1,0 +1,19 @@
+.list {
+  text-align: left;
+  max-width: 1200px;
+  margin: auto;
+  cursor: pointer;
+}
+img{
+  border-radius: 100%;
+  width: 100px;
+height: 100px;
+float:inline-end;
+}
+div ul li div{
+  margin-top: -1%;
+  position:initial;
+}
+h5{
+  position: relative;
+}

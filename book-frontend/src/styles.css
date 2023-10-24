@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Playpen+Sans:wght@300&family=Tilt+Neon&display=swap');
+div{
+  font-family: 'Exo 2', sans-serif;
+  font-family: 'Playpen Sans', cursive;
+  font-family: 'Tilt Neon', sans-serif;
+}
+
