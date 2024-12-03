@@ -6,11 +6,10 @@ import { Book } from '../models/book.model';
 const baseUrl = 'http://localhost:8080/api/books';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class BookService {
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getAll(): Observable<Book[]> {
     return this.http.get<Book[]>(baseUrl);
@@ -38,5 +37,9 @@ export class BookService {
 
   findByTitle(title: any): Observable<Book[]> {
     return this.http.get<Book[]>(`${baseUrl}?title=${title}`);
+  }
+
+  searchFilteredBooks(query: string, filter: string): Observable<Book[]> {
+    return this.http.get<Book[]>(`${baseUrl}?query=${query}&filter=${filter}`);
   }
 }
